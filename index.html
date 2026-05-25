@@ -1,0 +1,385 @@
+<D!OCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wisata Candi Lor Nganjuk</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#333;
+      line-height:1.6;
+    }
+
+    /* HEADER */
+
+    header{
+      background:
+      linear-gradient(rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)),
+      url('candilor1.jpg');
+
+      background-size:cover;
+      background-position:center;
+      height:100vh;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+
+      color:white;
+      padding:20px;
+    }
+
+    header h1{
+      font-size:60px;
+      margin-bottom:15px;
+    }
+
+    header p{
+      font-size:20px;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      background:#8B0000;
+      padding:15px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 20px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:yellow;
+    }
+
+    /* SECTION */
+
+    section{
+      padding:60px 10%;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .title h2{
+      font-size:35px;
+      color:#8B0000;
+      margin-bottom:10px;
+    }
+
+    /* CARD */
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      margin-bottom:30px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    /* GALERI */
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .gallery div{
+      background:white;
+      padding:20px;
+      border-radius:15px;
+      text-align:center;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .gallery div:hover{
+      transform:scale(1.03);
+    }
+
+    .gallery h3{
+      color:#8B0000;
+      margin:15px 0 10px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius:10px;
+    }
+
+    /* BUTTON */
+
+    button{
+      background:#8B0000;
+      color:white;
+      border:none;
+      padding:12px 25px;
+      border-radius:10px;
+      cursor:pointer;
+      margin-top:15px;
+      transition:0.3s;
+      font-size:16px;
+    }
+
+    button:hover{
+      background:#b30000;
+    }
+
+    /* LOKASI */
+
+    iframe{
+      width:100%;
+      height:350px;
+      border:none;
+      border-radius:15px;
+      margin-top:20px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#8B0000;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:40px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      header h1{
+        font-size:40px;
+      }
+
+      header p{
+        font-size:16px;
+      }
+
+      nav a{
+        display:block;
+        margin:10px 0;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div>
+      <h1>Candi Lor</h1>
+      <p>Wisata Sejarah Kecamatan Loceret, Kabupaten Nganjuk</p>
+
+      <button onclick="pesan()">
+        Jelajahi Sekarang
+      </button>
+    </div>
+  </header>
+
+  <!-- NAVBAR -->
+
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#sejarah">Sejarah</a>
+    <a href="#keunikan">Keunikan</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#lokasi">Lokasi</a>
+  </nav>
+
+  <!-- TENTANG -->
+
+  <section id="tentang">
+
+    <div class="title">
+      <h2>Tentang Candi Lor</h2>
+      <p>Destinasi wisata sejarah terkenal di Nganjuk</p>
+    </div>
+
+    <div class="card">
+      <p>
+        Candi Lor merupakan salah satu peninggalan sejarah yang berada di Kecamatan Loceret, Kabupaten Nganjuk, Jawa Timur.
+        Candi ini dikenal sebagai bangunan kuno bercorak Hindu yang memiliki nilai sejarah dan budaya tinggi.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- SEJARAH -->
+
+  <section id="sejarah">
+
+    <div class="title">
+      <h2>Sejarah Singkat</h2>
+    </div>
+
+    <div class="card">
+      <p>
+        Candi Lor dipercaya dibangun pada masa Kerajaan Mataram Kuno.
+        Bangunan ini dibuat dari batu bata merah dan menjadi salah satu situs sejarah penting di Kabupaten Nganjuk.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- KEUNIKAN -->
+
+  <section id="keunikan">
+
+    <div class="title">
+      <h2>Keunikan Candi Lor</h2>
+    </div>
+
+    <div class="gallery">
+
+      <div>
+        <h3>Bangunan Bersejarah</h3>
+        <p>
+          Memiliki arsitektur kuno khas kerajaan Hindu di Jawa Timur.
+        </p>
+      </div>
+
+      <div>
+        <h3>Tempat Wisata Edukasi</h3>
+        <p>
+          Cocok untuk belajar sejarah dan budaya Nusantara.
+        </p>
+      </div>
+
+      <div>
+        <h3>Lokasi Strategis</h3>
+        <p>
+          Mudah dijangkau oleh wisatawan lokal maupun luar daerah.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALERI -->
+
+  <section id="galeri">
+
+    <div class="title">
+      <h2>Galeri Wisata</h2>
+      <p>Kumpulan foto asli Candi Lor</p>
+    </div>
+
+    <div class="gallery">
+
+      <div>
+        <img src="candilor.jpg" alt="Candi Lor 1">
+
+        <h3>Candi Lor</h3>
+
+        <p>
+          Tampilan depan Candi Lor dengan suasana cerah.
+        </p>
+      </div>
+
+      <div>
+        <img src="candilor1.jpg" alt="Candi Lor 2">
+
+        <h3>Bangunan Bersejarah</h3>
+
+        <p>
+          Struktur batu bata merah khas peninggalan kuno.
+        </p>
+      </div>
+
+      <div>
+        <img src="candilor2.jpg" alt="Candi Lor 3">
+
+        <h3>Pohon Besar</h3>
+
+        <p>
+          Pohon besar yang menjadi ikon unik di area candi.
+        </p>
+      </div>
+
+      
+    </div>
+
+  </section>
+
+  <!-- LOKASI -->
+
+  <section id="lokasi">
+
+    <div class="title">
+      <h2>Lokasi Wisata</h2>
+    </div>
+
+    <div class="card">
+
+      <p>
+        📍 Desa Candirejo, Kecamatan Loceret,
+        Kabupaten Nganjuk, Jawa Timur.
+      </p>
+
+      <iframe
+      src="https://maps.google.com/maps?q=Candi%20Lor%20Nganjuk&t=&z=13&ie=UTF8&iwloc=&output=embed">
+      </iframe>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>
+      © 2026 Website Pariwisata Candi Lor | Dibuat Untuk Tugas Sekolah
+    </p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function pesan(){
+      alert("Selamat datang di Website Wisata Candi Lor Nganjuk!");
+    }
+
+  </script>
+
+</body>
+</html>
